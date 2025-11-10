@@ -211,3 +211,9 @@ data/
 
 # vscode
 .vscode/
+
+#logs
+logs/
+
+# training checkpoints
+checkpoints/
