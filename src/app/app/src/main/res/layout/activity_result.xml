@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FFF9"
+    android:padding="16dp"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- 🌿 Tiêu đề -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kết quả nhận diện bệnh cây"
+            android:textColor="#2E7D32"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 🖼️ Ảnh mẫu -->
+        <ImageView
+            android:id="@+id/resultImage"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_border"
+            android:contentDescription="Ảnh cây trồng" />
+
+        <!-- 📊 Card kết quả -->
+        <LinearLayout
+            android:id="@+id/resultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌱 Đang xử lý ảnh..."
+                android:textColor="#1B5E20"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 🪴 Gợi ý -->
+        <TextView
+            android:id="@+id/hintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hãy chắc chắn ảnh rõ nét, thấy rõ lá và bệnh trên cây 🌿"
+            android:textColor="#666"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FFF9"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- 🌿 Tiêu đề -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plant Disease Classifier"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 🖼️ Preview ảnh -->
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_border"
+            android:contentDescription="Preview ảnh"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 📁 Chọn ảnh từ thư viện -->
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📂 Chọn ảnh từ thư viện"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp" />
+
+        <!-- 📷 Chụp ảnh bằng Camera -->
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📷 Chụp ảnh"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 🔔 Gợi ý -->
+        <TextView
+            android:id="@+id/hintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn hoặc chụp ảnh rõ nét để nhận diện bệnh trên lá cây 🌿"
+            android:textColor="#666"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="12dp" />
+
+    </LinearLayout>
+</ScrollView>
